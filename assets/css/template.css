@@ -7,12 +7,15 @@ body {
     padding: 0;
 }
 
+/* Configurações do cabeçário na barra de navegação */
 header {
     display: flex;
     justify-content: center;
     height: 120px;
 }
 
+/* O container abaixo é a classe para a distribuição uniforme 
+dos principais elementos do site */
 .container {
     display: flex;
     justify-content: space-between;
@@ -20,26 +23,33 @@ header {
     overflow-x: hidden;
 }
 
+/* Logo padrão do template, alinhado dentro dos seus limites com a classe pai container */
 .logo {
     display: flex;
     align-items: center;
 }
 
+/* Menu de navegação que se estende até o canto superior direito.
+Mesmo princípio especificado na classe logo */
 .menu {
     display: flex;
     align-items: center;
 }
 
+/* Navegação do site a partir de uma lista não ordenada, assim como seus itens */
 nav ul, nav li{
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+/* Distribuição uniforme dos elementos configurados acima */
 nav ul {
     display: flex;
 }
 
+/* Estilização das opções de navegação do site, 
+incluindo a remoção do hiperlink padrão da tag <a> */
 nav a {
     display: block;
     padding: 15px;
@@ -49,11 +59,13 @@ nav a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Estilização das opções de navegação do site ao passar a seta do mouse */
 nav .active a, nav a:hover {
     background-color: #39AAE1;
     color: #FFF;
 }
 
+/* Posicionamento da imagem de destaque do site */
 #banner {
     display: flex;
     justify-content: center;
@@ -63,10 +75,12 @@ nav .active a, nav a:hover {
     height: 670px;
 }
 
+/* Classe para a distribuição em coluna caso necessário */
 .column {
     flex-direction: column;
 }
 
+/* Posicionamento da manchete do site */
 .banner_headline {
     flex: 1;
     display: flex;
@@ -74,6 +88,7 @@ nav .active a, nav a:hover {
     justify-content: center;
 }
 
+/* Estilização do título principal da manchete do site */
 .banner_headline h1 {
     color: #FFF;
     font-size: 70px;
@@ -83,6 +98,7 @@ nav .active a, nav a:hover {
     max-width: 350px;
 }
 
+/* Estilização do título secundário da manchete do site */
 .banner_headline h2 {
     color: #FFF;
     font-size: 21px;
@@ -91,23 +107,28 @@ nav .active a, nav a:hover {
     margin-top: 30px;
 }
 
+/* Distribuição das seções principais do site */
 .banner_options {
     height: 210px;
     display: flex;
 }
 
+/* Estilização das seção 1 */
 .banner1 {
     background-color: #39AAE1;
 }
 
+/* Estilização das seção 2 */
 .banner2 {
     background-color: #0079C7;
 }
 
+/* Estilização das seção 3 */
 .banner3 {
     background-color: #2B4C99;
 }
 
+/* Espaçamento e distribuição uniforme das tres seções principais do site */
 .banner1,
 .banner2,
 .banner3 {
@@ -116,16 +137,20 @@ nav .active a, nav a:hover {
     padding: 20px;
 }
 
+/* Tamanho de fonte do título de cada uma das três seções do site */
 .banner_title {
     font-size: 21px;
 }
 
+/* Tamanho e posicionamento da descrição de cada uma das três seções principais do site */
 .banner_desc {
     font-size: 12px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+/* Estilização e distribuição do link de redirecionamento de cada uma das
+três seções principais do site */
 .banner_options a {
     display: inline-block;
     border: 1px solid #FFF;
@@ -135,6 +160,7 @@ nav .active a, nav a:hover {
     text-decoration: none;
 }
 
+/* Estilização da descrição presente em cada uma das três seções principais do site */
 .banner_hours {
     display: flex;
     padding-bottom: 10px;
@@ -142,35 +168,42 @@ nav .active a, nav a:hover {
     justify-content: space-between;
 }
 
+/* Configuração inicial das seções secundárias do site */
 #geral {
     display: flex;
     justify-content: center;
 }
 
+/* Distribuição de espaço maior para seções especificadas com a tag section */
 #geral section {
     flex: 2;
 }
 
+/* Distribuição de espaço maior para seções especificadas com a tag aside */
 #geral aside {
     flex: 1;
 }
 
+/* Classe principal para o espaçamento e distribuição das seções secundárias */
 .widget {
     width: 700px;
     display: flex;
 }
 
+/* Classe padrão para espaçamento do título  das seções secundárias */
 .widget_title {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
+/* Estilização do título  das seções principais */
 .widget_title_text {
     color: #000;
     font-size: 21px;
     font-weight: bold;
 }
 
+/* Estilização da barra delimitada pelo título da seção secundárias do site */
 .widget_title_bar {
     width: 50px;
     height: 2px;
@@ -178,15 +211,18 @@ nav .active a, nav a:hover {
     margin-top: 10px;
 }
 
+/* Espaçamento entre a barra de delimitação e o conteúdo das seções secundárias */
 .widget_body {
     margin-top: 20px;
 }
 
+/* Configuração de espaçamento da seção 'Departmens' */
 .widget_departments {
     display: flex;
     justify-content: space-between;
 }
 
+/* Estilização e configuração das caixas dentro da seção 'Departmens' */
 .widget_departments_box {
     margin-right: 20px;
     margin-top: 20px;
@@ -195,6 +231,7 @@ nav .active a, nav a:hover {
     background-color: #36A9E1;
 }
 
+/* Espaçamento e tamanho de fonte da mensagem da seção 'Make An Appointment' */
 .appointment_message {
     font-size: 13px;
     padding-top: 15px;
@@ -203,18 +240,23 @@ nav .active a, nav a:hover {
     max-width: 300px;
 }
 
+/* Distribuição uniforme dos elementos da seção 'Make An Appointment' */
 .appointment_item {
     display: flex;
 }
 
+/* Tirar o hiperlink dos artigos da seção 'Latest News' */
 article a {
     text-decoration: none;
 }
 
+/* Distribuição uniforme das informações básicas da notícia de cada 
+elemento da seção 'Latest News' */
 article .news_data {
     display: flex;
 }
 
+/* Estilização das informações básicas da notícia de cada elemento da seção 'Latest News' */
 article .news_posted_at {
     background-color: #2B4C99;
     color: #FFF;
@@ -223,6 +265,8 @@ article .news_posted_at {
     margin-right: 2px;
 }
 
+/* Estilização e configuração da quantidade de comentários de 
+cada elemento da seção 'Latest News' */
 article .news_comments {
     background-color: #39AAE1;
     color: #FFF;
@@ -230,15 +274,18 @@ article .news_comments {
     padding: 10px;
 }
 
+/* Espaçamento entre a thumbnail e as informações básicas dos elementos da seção 'Latest News' */
 article .news_thumbnail {
     margin-top: 30px;
 }
 
+/* Distribuição da imagem da thumbnail */
 article .news_thumbnail img {
     width: 100%;
     height: auto;
 }
 
+/* Estilização e espaçamento do título de cada elemento da seção 'Latest News' */
 article .news_title {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -246,6 +293,7 @@ article .news_title {
     font-size: 23px;
 }
 
+/* Estilização e espaçamento da descrição de cada elemento da seção 'Latest News' */
 article .news_resume {
     color: #5C5C5C;
     line-height: 20px;
@@ -253,62 +301,75 @@ article .news_resume {
     margin-bottom: 30px;
 }
 
+/* Classe padrão para uso de Flexbox e permisão para quebra de linha */
 .flex {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Delimita a distribuição uniforme de cada notícia/elemento */
 article {
     flex: 1;
     min-width: 300px;
     margin-right: 20px;
 }
 
+/* Configuração da distribuição uniforme e estilização básica do rodapé da página */
 footer {
     background-color: #1E1E1E;
     display: flex;
     justify-content: center;
 }
 
+/* Distribuição uniforme das seções do rodapé */
 .footer_menu {
     display: flex;
 }
 
+/* Estilização da seção 1 do rodapé */
 .fm_1 {
     background-color: #39AAE1;
 }
 
+/* Estilização da seção 2 do rodapé */
 .fm_2 {
     background-color: #0079C7;
 }
 
+/* Estilização da seção 3 do rodapé */
 .fm_3 {
     background-color: #2B4C99;
 }
 
+/* Espaçamento padrão do conteúdo das três seções do rodapé */
 .fm_1, .fm_2, .fm_3 {
     flex: 1;
     color: #FFF;
     padding: 20px;
 }
 
+/* Distribuição uniforme da área de conteúdo do rodapé */
 .footer_area {
     display: flex;
 }
 
+/* Distribuição uniforme e estilização padrão de cada conteúdo da área do rodapé */
 .footer_area_item {
     flex: 1;
     color: #FFF;
 }
 
+/* Mesmo uso da classe column, para distribuição uniforme em coluna */
 .flexColumn {
     flex-direction: column;
 }
 
+/* Estilização do título específico do rodapé */
 footer .widget_title_text {
     color: #FFF;
 }
 
+/* Estilização e espaçamento do texto descritivo dos direitos autorais */
 .footer_copy {
     border-top: 1px solid #2C2C2C;
     height: 40px;
@@ -318,16 +379,19 @@ footer .widget_title_text {
     margin-top: 30px;
 }
 
+/* Distribuição uniforme dos itens presentes no rodapé */
 .widget_footer {
     max-width: 300px;
     display: flex;
 }
 
+/* Remoção do hiperlink e estilização dos redirecionamentos dentro do rodapé */
 footer a {
     text-decoration: none;
     color: #FFF;
 }
 
+/* Espaçamento e estilização do conteúdo da área do rodapé */
 .footer_area_content {
     font-size: 13px;
     padding-top: 20px;
@@ -335,30 +399,36 @@ footer a {
     display: flex;
 }
 
+/* Distribuição uniforme da lista não ordenada presente nos conteúdos do rodapé */
 .footer_area_content ul{
     list-style: none;
     padding-left: 0;
     flex: 1;
 }
 
+/* Estilização e espaçamento de cada texto presente no conteúdo do rodapé */
 .footer_area_content ul div {
     color: #FFF;
     margin-bottom: 5px;
 }
 
+/* Espaçamento entre cada ícone presente no rodapé */
 .footer_area_content img {
     margin-right: 5px;
 }
 
+/* Classe padrão para o tempo de registro de notícia */
 .time_post {
     
 }
 
+/* Estilização do tempo de registro de notícia */
 .footer_area_content ul .time_post {
     color: #39AAE1;
     margin-bottom: 20px;
 }
 
+/* Espaçamento e configuração do menu de navegação para responsividade em dispositivos móveis*/
 .menuMobile {
     display: none;
     width: 40px;
@@ -368,11 +438,13 @@ footer a {
     margin-right: 20px;
 }
 
+/* Estilização do menu 'sanduiche' em dispositivos móveis */
 .mm_line {
     height: 3px;
     background-color: #39AAE1;
 }
 
+/* Distribuição e espaçamento para dispositivos móveis pequenos */
 @media (max-width: 400px) {
     .widget_body {
         flex-direction: column;
@@ -380,6 +452,7 @@ footer a {
     }
 }
 
+/* Distribuição e espaçamento para dispositivos móveis médios*/
 @media (max-width: 600px) {
     .banner_headline {
         padding: 20px;
